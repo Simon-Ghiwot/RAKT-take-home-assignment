@@ -223,7 +223,7 @@ Welcome to RAKT take home assignment, this an api endpoint given a coordinate in
 
 ## Trade off
 
-This project demonstrates the implementation of the Haversine distance formula for calculating proximity between two geographical coordinates. The Haversine formula is commonly used to calculate the distance between two points on a sphere, such as the Earth.
+This project demonstrates the implementation of the Haversine distance formula for calculating proximity between two geographical coordinates. The Haversine formula is commonly used to calculate the distance between two points on a sphere, such as the Earth. This could have been done on the database by using proximity calculators but I wanted to use this equation because it would be a great learning exprience. The database implmentation would slightly be faster than the actual Haversine calculation.
 
 ## Sample
 
