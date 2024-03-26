@@ -4,7 +4,6 @@ from .serializers import Food_Truck_serialzer
 from rest_framework.decorators import api_view
 from .utils import Algorithm
 
-
 '''
     Endpoint to get the nearst food trucks 
     
@@ -31,16 +30,18 @@ def get_all_food_truck(request):
     # Accept the data that comes through the request object
     origin_latitude, origin_longtiude = float(request.data['origin_latitude']), float(request.data['origin_longtiude']) 
     nearest_food_trucks = []
+    
 
     # Iterate through the food trucks and calculate the distance using haversine_distance_equation algorithim
     for food_truck in food_serializer.data:
 
         destination_latitude, destination_longtiude = food_truck['latitude'], food_truck['longitude']
         distance = Algorithm.haversine_distance_equation(origin_latitude, origin_longtiude, destination_latitude, destination_longtiude )
+        distance = float(str(distance).split('e')[0])
         nearest_food_trucks.append((distance, food_truck))
 
     # Sort the food trucks based on the distance in ascending order
-    nearest_food_trucks.sort(key=lambda x: x[0])
+    nearest_food_trucks.sort(key=lambda x: float(x[0]) - 0)
 
     result = []
     # Modify the response data format

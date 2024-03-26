@@ -221,6 +221,14 @@ Welcome to RAKT take home assignment, this an api endpoint given a coordinate in
        }
    ```
 
+## Trade off
+
+This project demonstrates the implementation of the Haversine distance formula for calculating proximity between two geographical coordinates. The Haversine formula is commonly used to calculate the distance between two points on a sphere, such as the Earth.
+
+## Sample
+
+![screenshot](rakt.png)
+
 ## License
 
 The Assignment is a take home assignment from RAKT Technologies. Author : Simon G/hiwot.
