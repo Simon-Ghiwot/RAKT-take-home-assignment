@@ -227,7 +227,7 @@ This project demonstrates the implementation of the Haversine distance formula f
 
 ## Sample
 
-![screenshot](rakt.png)
+![screenshot](rakt.jpg)
 
 ## License
 
